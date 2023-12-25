@@ -1,7 +1,7 @@
 # Automatic Scoring Framework for Generative AI
 This project aims to create an automatic framework for generative AI, which can produce lots of images and automatically choose the best by scoring model.
 
-In our case, we implement it on cloth styling, which is a common use case in industry. However, we expect that this framework can be used in other scenarios, such as home decoration.
+In our case, we implement it on cloth styling, which is a common use case in the industry. However, we expect that this framework can be used in other scenarios, such as home decoration.
 
 ## Set up the environment
 0. Create a virtual environment with Python 3.8
@@ -33,7 +33,7 @@ wget https://github.com/IceClear/CLIP-IQA/releases/download/Pretrained/iter_8000
 ## Usage
 Place sample images into `test_images` and the result will be saved in `result_images`.
 
-Specify an image, a point and text prompt, and run:
+Specify an image, a point, and a text prompt, and run:
 ```bash
 python ./Inpaint-Anything/fill_anything.py \
     --input_img ./test_images/test3.jpg \
@@ -50,7 +50,9 @@ python ./Inpaint-Anything/fill_anything.py \
 ## Result
 We test the image from `test_images/test3.jpg`, and the following is the image.
 
-From the following table, we can find that the image with better quality produces higher score. Therefore, we can automatically choose the better image without human intervention, which is a lot efficient and more executable for business usage.
+<img src="https://github.com/allenlin0105/Automatic-Scoring-GenerativeAI/blob/main/test_images/test3.jpg" height="450">
+
+From the following table, we can find that the image with better quality produces a higher score. Therefore, we can automatically choose the better image without human intervention, which is a lot more efficient and more executable for business usage.
 Score=0.646 | Score=0.607 | Score=0.553 | 
 | --- | --- | --- |
 | ![Image 1](/result_images/test3/filled_with_mask_0.png) | ![Image 2](/result_images/test3/filled_with_mask_1.png) | ![Image 2](/result_images/test3/filled_with_mask_2.png) |
