@@ -4,9 +4,6 @@
 # Inpaint-Anything
 Inpaint-Anything/pretrained_models
 
-# Output
-result_images/
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
